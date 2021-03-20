@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tests",
+  "info": {
+    "name": "test"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "teat": {
+      "type": "text"
+    },
+    "test_text": {
+      "type": "richtext"
+    },
+    "test_date": {
+      "type": "datetime"
+    },
+    "link_test": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
